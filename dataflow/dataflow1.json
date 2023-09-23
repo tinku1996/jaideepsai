@@ -9,10 +9,19 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "compose1"
+				}
+			],
 			"scriptLines": [
+				"parameters{",
+				"     Source1 as integer ($parameter1),",
+				"     compose as integer ($compose)",
+				"}",
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source1"
+				"     validateSchema: false) ~> source1",
+				"compose(composition: 'undefined') ~> compose1@(temporary)"
 			]
 		}
 	}
