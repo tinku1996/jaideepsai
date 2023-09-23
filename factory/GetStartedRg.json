@@ -1,0 +1,9 @@
+{
+	"name": "GetStartedRg",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "72a43a20-7a88-4217-9ea3-f9f290c718f3",
+		"tenantId": "fd9920fd-c098-4dd1-ad38-7e1f2dfe1d82"
+	}
+}
